@@ -1,0 +1,128 @@
+.faq-intro {
+	padding-block: 70px 36px;
+}
+
+.faq-intro h1 {
+	font-size: clamp(34px, 5vw, 48px);
+}
+
+.faq-intro .page-lead {
+	margin-top: 14px;
+	font-size: 16px;
+}
+
+.faq-layout {
+	display: grid;
+	grid-template-columns: 220px minmax(0, 1fr);
+	gap: 70px;
+	align-items: start;
+	padding-bottom: 90px;
+}
+
+.faq-index {
+	position: sticky;
+	top: 24px;
+	display: grid;
+	gap: 4px;
+	padding-left: 14px;
+	border-left: 2px solid #e7eae7;
+}
+
+.faq-index a {
+	padding: 10px 12px;
+	color: #5d675f;
+	font-size: 14px;
+	font-weight: 600;
+	text-decoration: none;
+}
+
+.faq-index a:hover,
+.faq-index a:focus-visible {
+	color: #356a54;
+}
+
+.faq-category {
+	margin-bottom: 38px;
+	scroll-margin-top: 24px;
+}
+
+.faq-category h2 {
+	margin: 0 0 14px;
+	color: #202124;
+	font-size: 21px;
+	letter-spacing: 0;
+}
+
+.faq-category details {
+	border-top: 1px solid #dfe3df;
+}
+
+.faq-category details:last-child {
+	border-bottom: 1px solid #dfe3df;
+}
+
+.faq-category summary {
+	position: relative;
+	padding: 18px 36px 18px 0;
+	color: #2e3631;
+	cursor: pointer;
+	font-size: 15px;
+	font-weight: 700;
+	line-height: 1.45;
+	list-style: none;
+}
+
+.faq-category summary::-webkit-details-marker {
+	display: none;
+}
+
+.faq-category summary::after {
+	position: absolute;
+	top: 50%;
+	right: 4px;
+	color: #599879;
+	content: "+";
+	font-size: 22px;
+	font-weight: 400;
+	transform: translateY(-50%);
+}
+
+.faq-category details[open] summary::after {
+	content: "-";
+}
+
+.faq-category details p {
+	max-width: 720px;
+	margin: -2px 32px 18px 0;
+	color: #69716c;
+	font-size: 14px;
+	line-height: 1.7;
+}
+
+@media (max-width: 700px) {
+	.faq-intro {
+		padding-block: 54px 24px;
+	}
+
+	.faq-layout {
+		grid-template-columns: 1fr;
+		gap: 30px;
+		padding-bottom: 60px;
+	}
+
+	.faq-index {
+		position: static;
+		display: flex;
+		flex-wrap: wrap;
+		gap: 4px;
+		padding: 0 0 10px;
+		border: 0;
+		border-bottom: 1px solid #dfe3df;
+	}
+
+	.faq-index a {
+		padding: 8px 10px;
+		border-radius: 4px;
+		background: #f4f6f3;
+	}
+}

@@ -1,0 +1,716 @@
+/* HERO SECTION BACKGROUND SA HOMEPAGE*/
+
+#hero {
+    background-image: url('../../images/honey.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    min-height: 500px;
+    padding: 80px 50px;
+
+    display: flex;
+    align-items: center;
+}
+
+
+/* WHITE CONTENT BOX INSIDE HERO */
+
+#hero > div {
+    background-color: #ffffff;
+    max-width: 620px;
+    width: 100%;
+    padding: 30px 35px;
+    border-radius: 25px;
+    box-sizing: border-box;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+}
+
+/* HERO TEXT SPACING */
+
+#hero > div h1 {
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+#hero > div p {
+    line-height: 1.5;
+}
+
+/* FIND YOUR PLACE IN THE HIVE AND MAKE A DIFFERENCE */
+
+#find-your-place {
+    padding: 70px 50px;
+    background-color: #ffffff;
+}
+
+#find-your-place > div {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+#find-your-place h2 {
+    text-align: center;
+    margin: 0 auto 36px;
+    color: #202124;
+    font-family: "Avenir Next", Avenir, "Arial Black", sans-serif;
+    font-size: clamp(24px, 3vw, 34px);
+    font-weight: 900;
+    line-height: 1.2;
+    letter-spacing: 0;
+}
+
+#find-your-place h2 span {
+    color: #f5b900;
+}
+
+/* THREE CARDS Join hive/ Volunteer Opportunities/ Register Your Organization LAYOUT */
+
+#find-your-place > div > div {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    max-width: 930px;
+    margin: 0 auto;
+    gap: 44px;
+}
+
+/* INDIVIDUAL CARDS */
+
+#find-your-place article {
+    position: relative;
+    display: flex;
+    min-height: 262px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 32px 22px 24px;
+    border: 1px solid #aeb2b1;
+    border-radius: 34px;
+    background-color: #f0f0f0;
+    text-align: center;
+}
+
+#find-your-place article h3 {
+    margin: 0 0 6px;
+    color: #111111;
+    font-size: 15px;
+    font-weight: 800;
+}
+
+#find-your-place article p {
+    max-width: 230px;
+    margin: 0;
+    color: #222222;
+    font-size: 14px;
+    line-height: 1.12;
+}
+
+#find-your-place article a {
+    display: inline-block;
+    text-decoration: none;
+}
+
+#find-your-place .place-card {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+    height: 100%;
+}
+
+#find-your-place .place-card article {
+    height: 100%;
+    box-sizing: border-box;
+    cursor: pointer;
+    transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+#find-your-place .place-card:hover article {
+    transform: translateY(-3px);
+    background-color: #e9e9e9;
+}
+
+.place-card-icon {
+    display: grid;
+    width: 100px;
+    aspect-ratio: 1;
+    flex: 0 0 auto;
+    place-items: center;
+    margin: 0 auto 12px;
+    border-radius: 50%;
+    background: #f9bd2f;
+}
+
+.place-card-icon svg {
+    width: 56px;
+    height: 56px;
+    fill: #ffffff;
+}
+
+.place-card-arrow {
+    position: absolute;
+    top: 16px;
+    right: 18px;
+    width: 22px;
+    height: 22px;
+    color: #599879;
+}
+
+.place-card-arrow svg {
+    display: block;
+    width: 100%;
+    height: 100%;
+    fill: none;
+    stroke: currentColor;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-width: 1.8;
+}
+
+/* CAUSES YOU CAN SUPPORT SECTION */
+
+#causes {
+    padding: 75px 50px 100px;
+    background-color: #fffaf0;
+}
+
+#causes > div {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+#causes h2,
+#causes > div > p {
+    text-align: center;
+}
+
+#causes > div > p {
+    line-height: 1.6;
+    margin-bottom: 40px;
+}
+
+/* FOUR CAUSE CARDS */
+
+#causes > div > div {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+#causes .cause-card {
+    display: block;
+    height: 100%;
+    text-decoration: none;
+    color: inherit;
+}
+
+#causes .cause-card article {
+    height: 100%;
+    box-sizing: border-box;
+    background-color: #ffffff;
+    padding: 30px 20px;
+    border-radius: 18px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.12);
+    text-align: left;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+#causes .cause-card:hover article {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.18);
+}
+
+#causes .cause-card h3 {
+    margin-bottom: 15px;
+}
+
+#causes .cause-card p {
+    line-height: 1.6;
+    margin-bottom: 0;
+}
+
+#causes .cause-card article {
+    padding: 0;
+    overflow: hidden;
+    min-height: 360px;
+}
+
+#causes .cause-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    display: block;
+}
+
+#causes .cause-card h3 {
+    padding: 20px 20px 0;
+}
+
+#causes .cause-card p {
+    padding: 0 20px 25px;
+}
+
+
+/* =========================
+   CALL TO ACTION CARD
+========================= */
+#call-to-action {
+    padding: 0 20% 10px !important;
+    margin: 0 !important;
+}
+
+main:has(#call-to-action) + .site-footer {
+    margin-top: 0 !important;
+    padding-top: 30px !important;
+    border-top: 1px solid rgba(0, 0, 0, 0.12);
+}
+
+#call-to-action > div {
+    max-width: 900px;
+    width: 100%;
+    box-sizing: border-box;
+    margin: 80px auto 0;
+    padding: 22px 25px;
+    background-color: #F4C542;
+    border-radius: 18px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.10);
+    text-align: center;
+}
+
+#call-to-action h2 {
+    color: #243b35;
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+#call-to-action p {
+    color: #243b35;
+    font-size: 14px;
+    line-height: 1.5;
+    margin-bottom: 18px;
+}
+
+/* WHITE BUTTON */
+
+#call-to-action a {
+    display: inline-block;
+    width: fit-content;
+    background-color: #ffffff;
+    color: #243b35;
+    text-decoration: none;
+    padding: 8px 16px;
+    border-radius: 30px;
+    font-size: 13px;
+    font-weight: 600;
+    transition: 0.3s ease;
+}
+
+#call-to-action a:hover {
+    background-color: #243b35;
+    color: #ffffff;
+    transform: translateY(-3px);
+}
+
+/* FOOTER SPACING */
+
+main:has(#call-to-action) + .site-footer {
+    margin-top: 0 !important;
+    padding-top: 20px;
+}
+
+/* ========================================================
+   CAUSES SECTION - LIGHT BLUE
+=========================================================== */
+
+#causes {
+    background-color: #f1f1f1;
+}
+
+#causes .cause-card article {
+    background-color: #ffffff;
+}
+/*========================================================== */
+
+#hero {
+    min-height: 700px;
+    padding: 44px clamp(24px, 4.8vw, 56px);
+    display: flex;
+    align-items: center;
+    background-color: #dbb433;
+    background-image:
+        radial-gradient(circle at 5% 60%, #e2c34b 0 26px, #5c9f87 27px 53px, transparent 54px),
+        radial-gradient(circle at 28% 22%, transparent 0 36px, #5f9f87 38px 50px, transparent 52px),
+        radial-gradient(circle at 46% 72%, #d96246 0 45px, transparent 47px),
+        radial-gradient(circle at 68% 28%, #69aa91 0 35px, transparent 37px),
+        radial-gradient(circle at 91% 72%, #d9684c 0 58px, transparent 60px),
+        repeating-linear-gradient(90deg, transparent 0 54px, #d8aa27 55px 74px, transparent 75px 96px),
+        linear-gradient(90deg, #d9664b 0 15%, #ddb533 15% 34%, #70ac90 34% 50%, #deb532 50% 75%, #e27454 75% 88%, #66a48b 88%);
+    background-position: center;
+    background-size: cover;
+}
+
+#hero > div {
+    max-width: 670px;
+    padding: 50px clamp(28px, 4.8vw, 54px) 34px;
+    border-radius: 38px;
+    color: #202124;
+    font-family: "Avenir Next", Avenir, "Trebuchet MS", sans-serif;
+    font-weight: 400;
+    box-shadow: 0 8px 22px rgba(32, 33, 36, 0.16);
+    transform: translateY(-8px);
+}
+
+#hero > div > p:first-child {
+    margin: 0 0 6px;
+    color: #202124;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 1.2;
+}
+
+#hero > div h1 {
+    margin: 0 0 30px;
+    font-family: "Avenir Next", Avenir, "Arial Black", sans-serif;
+    font-size: clamp(36px, 3.6vw, 40px);
+    font-weight: 900;
+    line-height: 0.9;
+    letter-spacing: 0;
+}
+
+#hero > div p:not(:first-child) {
+    margin: 0;
+    font-size: 23px;
+    line-height: 1.52;
+    text-align: justify;
+    text-align-last: left;
+}
+
+.hero-opportunities-button {
+    display: inline-flex;
+    min-height: 46px;
+    align-items: center;
+    gap: 12px;
+    margin-top: 22px;
+    padding: 0 25px;
+    border: 1px solid #8e9691;
+    border-radius: 999px;
+    background: #f7f7f7;
+    color: #599879;
+    font-size: 18px;
+    font-weight: 700;
+    text-decoration: none;
+    transition: none;
+}
+
+.hero-opportunities-button svg {
+    width: 20px;
+    height: 20px;
+    fill: none;
+    stroke: currentColor;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-width: 1.8;
+}
+
+.hero-opportunities-button:hover,
+.hero-opportunities-button:focus-visible {
+    background: #000000;
+    color: #f9bd2f;
+}
+
+#find-your-place {
+    padding: 72px clamp(20px, 6vw, 80px);
+}
+
+#find-your-place h2,
+#causes h2 {
+    color: #202124;
+    font-size: 32px;
+    line-height: 1.2;
+    letter-spacing: 0;
+}
+
+#find-your-place h2 {
+    font-weight: 900;
+}
+
+#find-your-place article {
+    border: 1px solid #aeb2b1;
+    border-radius: 34px;
+    background: #f0f0f0;
+    box-shadow: none;
+}
+
+#find-your-place article h3 {
+    color: #111111;
+}
+
+#causes {
+    padding: 72px clamp(20px, 6vw, 80px);
+    background: #f1f1f1;
+}
+
+#causes > div > p {
+    max-width: 680px;
+    margin-bottom: 26px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+#causes > div > div {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    max-width: 920px;
+    gap: 34px;
+}
+
+#causes .cause-card article {
+    display: flex;
+    height: 100%;
+    min-height: 0;
+    flex-direction: column;
+    overflow: hidden;
+    background: #ffffff;
+    border: 1px solid rgba(32, 33, 36, 0.04);
+    border-radius: 34px;
+    box-shadow: 0 7px 17px rgba(32, 33, 36, 0.12);
+}
+
+#causes .cause-card img {
+    aspect-ratio: 1.94 / 1;
+    height: auto;
+    flex: 0 0 auto;
+    object-fit: cover;
+}
+
+#causes .cause-card h3 {
+    margin: 0;
+    padding: 15px 24px 2px;
+    color: #171a18;
+    font-size: 16px;
+    line-height: 1.2;
+}
+
+#causes .cause-card p {
+    flex: 1 0 auto;
+    margin: 0;
+    padding: 2px 24px 0;
+    color: #4a4e4b;
+    font-size: 14px;
+    line-height: 1.2;
+}
+
+.cause-explore {
+    display: inline-flex;
+    width: fit-content;
+    align-items: center;
+    gap: 8px;
+    margin: 9px 24px 18px;
+    padding: 7px 13px;
+    border: 1px solid #9da4a0;
+    border-radius: 999px;
+    background: #f7f7f7;
+    color: #599879;
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 1;
+}
+
+.cause-explore span {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+#call-to-action {
+    padding: 0 20px 24px !important;
+}
+
+#call-to-action > div {
+    margin: 56px auto 0;
+    padding: 38px 24px;
+    border-radius: 10px;
+    box-shadow: none;
+}
+
+#call-to-action a {
+    min-height: 42px;
+    padding: 12px 20px;
+    border-radius: 6px;
+    background: #202124;
+    color: #ffffff;
+}
+
+#call-to-action a:hover {
+    background: #356a54;
+    transform: none;
+}
+
+@media (max-width: 960px) {
+    #find-your-place > div > div {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        max-width: 650px;
+        gap: 22px;
+    }
+
+    #causes > div > div {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 600px) {
+    #hero {
+        min-height: 0;
+        padding: 44px 18px;
+        background-position: 58% center;
+    }
+
+    #hero > div {
+        padding: 28px 22px;
+    }
+
+    #hero > div h1 {
+        font-size: 32px;
+    }
+
+    #hero > div > p:first-child {
+        font-size: 20px;
+    }
+
+    #hero > div p:not(:first-child) {
+        font-size: 17px;
+        line-height: 1.5;
+    }
+
+    .hero-opportunities-button {
+        min-height: 44px;
+        font-size: 14px;
+    }
+
+    #find-your-place,
+    #causes {
+        padding: 52px 18px;
+    }
+
+    #find-your-place h2,
+    #causes h2 {
+        font-size: 25px;
+    }
+
+    #find-your-place > div > div,
+    #causes > div > div {
+        grid-template-columns: 1fr;
+    }
+
+    #find-your-place > div > div {
+        max-width: 360px;
+        gap: 18px;
+    }
+
+    #find-your-place article {
+        padding: 24px;
+    }
+
+    #call-to-action > div {
+        margin-top: 30px;
+    }
+}
+
+#call-to-action {
+    padding: 38px 24px 36px !important;
+    background: #ffffff;
+}
+
+#call-to-action > div {
+    width: min(100%, 885px);
+    max-width: 885px;
+    margin: 0 auto;
+    padding: 28px 24px;
+    border: 1px solid #b88d1d;
+    border-radius: 32px;
+    background: #f9bd2f;
+    box-shadow: none;
+}
+
+#call-to-action h2 {
+    margin: 0 0 5px;
+    color: #171a18;
+    font-size: 20px;
+    font-weight: 900;
+    line-height: 1.25;
+    text-transform: uppercase;
+}
+
+#call-to-action p {
+    margin: 0 0 16px;
+    color: #252a27;
+    font-size: 15px;
+    line-height: 1.4;
+}
+
+#call-to-action a {
+    display: inline-flex;
+    min-height: 44px;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0 25px;
+    border: 0;
+    border-radius: 999px;
+    background: #ffffff;
+    color: #202124;
+    font-size: 14px;
+    font-weight: 800;
+    transition: none;
+}
+
+#call-to-action a:hover {
+    background: #000000;
+    color: #ffffff;
+    transform: none;
+}
+
+main:has(#call-to-action) + .site-footer {
+    margin-top: 0 !important;
+    padding-top: 26px !important;
+    border-top: 1px solid #d5dad6;
+}
+
+main:has(#call-to-action) + .site-footer .footer-brand img {
+    width: 46px;
+    height: 46px;
+}
+
+main:has(#call-to-action) + .site-footer .footer-wordmark {
+    font-size: 29px;
+}
+
+main:has(#call-to-action) + .site-footer .footer-brand p {
+    margin-bottom: 12px;
+    font-size: 14px;
+}
+
+@media (max-width: 600px) {
+    #call-to-action {
+        padding: 28px 16px 30px !important;
+    }
+
+    #call-to-action > div {
+        padding: 26px 18px;
+        border-radius: 24px;
+    }
+
+    #call-to-action h2 {
+        font-size: 18px;
+    }
+
+    #call-to-action p {
+        font-size: 14px;
+    }
+
+    main:has(#call-to-action) + .site-footer .footer-wordmark {
+        font-size: 25px;
+    }
+}

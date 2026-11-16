@@ -1,0 +1,167 @@
+.about-intro {
+	padding: 88px 24px 96px;
+	background: #f5f7f3 url("../../images/honey.png") center / cover no-repeat;
+}
+
+.about-intro .content-width {
+	max-width: 860px;
+}
+
+.about-story,
+.about-values {
+	padding-block: 74px;
+}
+
+.section-intro {
+	max-width: 680px;
+	margin-bottom: 30px;
+}
+
+.section-intro h2 {
+	margin: 0;
+	color: #202124;
+	font-size: 30px;
+	line-height: 1.2;
+	letter-spacing: 0;
+}
+
+.story-columns {
+	display: grid;
+	grid-template-columns: repeat(3, minmax(0, 1fr));
+	gap: 30px;
+}
+
+.story-columns article {
+	padding-top: 20px;
+	border-top: 2px solid #f9bd2f;
+}
+
+.story-columns h3,
+.work-grid h3,
+.values-grid h3 {
+	margin: 0 0 10px;
+	color: #356a54;
+	font-size: 18px;
+}
+
+.story-columns p,
+.work-grid p,
+.values-grid p {
+	margin: 0;
+	color: #69716c;
+	font-size: 15px;
+	line-height: 1.65;
+}
+
+.about-work {
+	padding-block: 72px;
+	background: #f7f8f6;
+}
+
+.work-grid {
+	display: grid;
+	grid-template-columns: repeat(3, minmax(0, 1fr));
+	gap: 18px;
+}
+
+.work-grid article,
+.values-grid article {
+	padding: 24px;
+	border: 1px solid #e3e7e2;
+	border-radius: 8px;
+	background: #ffffff;
+}
+
+.work-index {
+	display: block;
+	margin-bottom: 24px;
+	color: #d69913;
+	font-size: 13px;
+	font-weight: 800;
+}
+
+.values-grid {
+	display: grid;
+	grid-template-columns: repeat(4, minmax(0, 1fr));
+	gap: 16px;
+}
+
+.values-grid h3 {
+	color: #202124;
+}
+
+.content-cta {
+	padding: 36px 0;
+	background: #f9bd2f;
+}
+
+.content-cta-inner {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 24px;
+}
+
+.content-cta h2 {
+	margin: 0;
+	color: #202124;
+	font-size: 28px;
+	line-height: 1.2;
+	letter-spacing: 0;
+}
+
+.primary-link {
+	display: inline-flex;
+	min-height: 46px;
+	align-items: center;
+	justify-content: center;
+	padding: 0 22px;
+	border-radius: 6px;
+	background: #202124;
+	color: #ffffff;
+	font-size: 14px;
+	font-weight: 700;
+	text-decoration: none;
+	white-space: nowrap;
+}
+
+.primary-link:hover {
+	background: #356a54;
+}
+
+@media (max-width: 760px) {
+	.about-intro {
+		padding: 64px 0;
+	}
+
+	.story-columns,
+	.work-grid {
+		grid-template-columns: 1fr;
+	}
+
+	.values-grid {
+		grid-template-columns: repeat(2, minmax(0, 1fr));
+	}
+
+	.content-cta-inner {
+		align-items: flex-start;
+		flex-direction: column;
+	}
+}
+
+@media (max-width: 480px) {
+	.about-story,
+	.about-values,
+	.about-work {
+		padding-block: 52px;
+	}
+
+	.section-intro h2,
+	.content-cta h2 {
+		font-size: 25px;
+	}
+
+	.values-grid {
+		grid-template-columns: 1fr;
+	}
+}
